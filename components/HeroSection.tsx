@@ -1,3 +1,8 @@
+'use client'
+
+import { useState } from 'react'
+import JoinModal from './JoinModal'
+
 const AVATAR_1 =
   'https://lh3.googleusercontent.com/aida-public/AB6AXuDnh8OGAbbmGANvmOLOJ2tTABSU1uZfLdnkuvsj3yLdQHURT8rf6nEExDXS4SiWo6s6PhdOlFk0GgtuYYX9Ag3sJtb_lV66m7jcWYYEUO63-5zteka6Ej_62ihQhfTWrxHKPdzM4VTbSaTo31VM_SB7x3BNbzuwv3lgVBkULMDcMg1Ye4JalA5xLf-iBjH8ZJwlAsRchm8UVe4OB6k9I62xE7SrPD0yMd4qtxs3f5Jv3m4qT30RKeYmibh0ZtH1Kp6uUz4aadbPxFw'
 const AVATAR_2 =
@@ -6,6 +11,8 @@ const SARAH_IMG =
   'https://lh3.googleusercontent.com/aida-public/AB6AXuBrzIT8WJIBHpDYEzcdvrMjNGFhrKPLwfuJtNtiMixVNnzJi-gr5lSRabOtLR4G3SEYHaL5MTtM3o4JnHCLPZVqLpUwHx9yf1FeP4vsNISJxCW4YJhprCyZA4vSHnnKRUHN1shOCcYI5M4BVyq-krFEmZPS_2RJIpkf1VOPBq0Zr2P_nqB13jQAQR8phUUmM7P-N7tRwZD9tjmw1MRV9ASn5FXs3KLMH3YiCPxLwqfTrn5k-qIy6jc8NNC4yrvYAq_AyIlJvZz_cWM'
 
 export default function HeroSection() {
+  const [modalOpen, setModalOpen] = useState(false)
+
   return (
     <section className="hero-pattern min-h-screen flex flex-col justify-center relative pt-32 pb-20 px-6 overflow-hidden">
       {/* Background blobs */}
@@ -35,19 +42,19 @@ export default function HeroSection() {
 
           {/* CTAs */}
           <div className="flex flex-wrap items-center gap-4">
-            <button className="bg-primary hover:bg-accent transition-all text-white px-8 py-4 rounded-2xl text-lg font-bold shadow-xl shadow-primary/20 flex items-center gap-2 group">
+            <button onClick={() => setModalOpen(true)} className="bg-primary hover:bg-accent transition-all text-white px-8 py-4 rounded-2xl text-lg font-bold shadow-xl shadow-primary/20 flex items-center gap-2 group">
               Hire Top Talent
               <span className="material-symbols-outlined transition-transform group-hover:translate-x-1">
                 arrow_forward
               </span>
             </button>
-            <button className="bg-white dark:bg-white/5 border border-slate-200 dark:border-white/10 hover:bg-slate-50 dark:hover:bg-white/10 transition-colors text-charcoal dark:text-white px-8 py-4 rounded-2xl text-lg font-bold">
+            <button onClick={() => setModalOpen(true)} className="bg-white dark:bg-white/5 border border-slate-200 dark:border-white/10 hover:bg-slate-50 dark:hover:bg-white/10 transition-colors text-charcoal dark:text-white px-8 py-4 rounded-2xl text-lg font-bold">
               Join as Talent
             </button>
           </div>
 
           {/* Social proof */}
-          <div className="flex items-center gap-6 pt-4">
+          {/* <div className="flex items-center gap-6 pt-4">
             <div className="flex -space-x-3">
               <img
                 alt="African Professional"
@@ -81,7 +88,7 @@ export default function HeroSection() {
               </div>
               <span className="text-xs font-bold text-navy-dark dark:text-white mt-0.5">4.9/5 Rating</span>
             </div>
-          </div>
+          </div> */}
         </div>
 
         {/* ─── Right Column — Floating Visual ─── */}
@@ -235,8 +242,10 @@ export default function HeroSection() {
         </div>
       </div>
 
+      <JoinModal isOpen={modalOpen} onClose={() => setModalOpen(false)} />
+
       {/* ─── Trusted By ─── */}
-      <div className="max-w-7xl mx-auto mt-24 w-full">
+      {/* <div className="max-w-7xl mx-auto mt-24 w-full">
         <p className="text-center text-[10px] font-bold text-charcoal/40 dark:text-slate-500 uppercase tracking-[0.4em] mb-10">
           Trusted by Global Innovators
         </p>
@@ -247,7 +256,7 @@ export default function HeroSection() {
             </span>
           ))}
         </div>
-      </div>
+      </div> */}
     </section>
   )
 }

@@ -1,4 +1,13 @@
+'use client'
+
+import { useState } from 'react'
+import JoinModal from './JoinModal'
+import ContactModal from './ContactModal'
+
 export default function CTABanner() {
+  const [modalOpen, setModalOpen] = useState(false)
+  const [contactOpen, setContactOpen] = useState(false)
+
   return (
     <section className="py-20 px-6 bg-white dark:bg-[#0f0f0f]">
       <div className="max-w-7xl mx-auto">
@@ -17,10 +26,10 @@ export default function CTABanner() {
               engineering talent in less than 48 hours.
             </p>
             <div className="flex flex-wrap items-center gap-4 pt-4">
-              <button className="bg-white text-primary px-8 py-4 rounded-2xl text-lg font-bold shadow-xl shadow-black/10 hover:scale-105 transition-all">
+              <button onClick={() => setModalOpen(true)} className="bg-white text-primary px-8 py-4 rounded-2xl text-lg font-bold shadow-xl shadow-black/10 hover:scale-105 transition-all">
                 Start Hiring Now
               </button>
-              <button className="bg-transparent border-2 border-white text-white px-8 py-4 rounded-2xl text-lg font-bold hover:bg-white/10 transition-all">
+              <button onClick={() => setContactOpen(true)} className="bg-transparent border-2 border-white text-white px-8 py-4 rounded-2xl text-lg font-bold hover:bg-white/10 transition-all">
                 Speak to an Expert
               </button>
             </div>
@@ -68,6 +77,8 @@ export default function CTABanner() {
           </div>
         </div>
       </div>
+      <JoinModal isOpen={modalOpen} onClose={() => setModalOpen(false)} />
+      <ContactModal isOpen={contactOpen} onClose={() => setContactOpen(false)} />
     </section>
   )
 }

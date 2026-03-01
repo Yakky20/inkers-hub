@@ -1,4 +1,11 @@
+'use client'
+
+import { useState } from 'react'
+import JoinModal from './JoinModal'
+
 export default function ForTalentsRecruiters() {
+  const [modalOpen, setModalOpen] = useState(false)
+
   return (
     <section className="py-32 px-6 bg-surface-light dark:bg-[#141414] border-y border-slate-100 dark:border-white/5">
       <div className="max-w-7xl mx-auto">
@@ -42,7 +49,7 @@ export default function ForTalentsRecruiters() {
             </div>
 
             <div className="pt-4">
-              <button className="px-8 py-4 bg-white dark:bg-white/5 border border-slate-200 dark:border-white/10 rounded-2xl font-bold text-navy-dark dark:text-white hover:border-primary/30 transition-all flex items-center gap-3 group">
+              <button onClick={() => setModalOpen(true)} className="px-8 py-4 bg-white dark:bg-white/5 border border-slate-200 dark:border-white/10 rounded-2xl font-bold text-navy-dark dark:text-white hover:border-primary/30 transition-all flex items-center gap-3 group">
                 Build your Talent Profile
                 <span className="material-symbols-outlined group-hover:translate-x-1 transition-transform">
                   arrow_forward
@@ -88,7 +95,7 @@ export default function ForTalentsRecruiters() {
             </div>
 
             <div className="pt-4">
-              <button className="px-8 py-4 bg-navy-dark dark:bg-white text-white dark:text-navy-dark rounded-2xl font-bold hover:bg-black dark:hover:bg-slate-200 transition-all flex items-center gap-3 group">
+              <button onClick={() => setModalOpen(true)} className="px-8 py-4 bg-navy-dark dark:bg-white text-white dark:text-navy-dark rounded-2xl font-bold hover:bg-black dark:hover:bg-slate-200 transition-all flex items-center gap-3 group">
                 Start Hiring Talent
                 <span className="material-symbols-outlined group-hover:translate-x-1 transition-transform">
                   arrow_forward
@@ -98,6 +105,7 @@ export default function ForTalentsRecruiters() {
           </div>
         </div>
       </div>
+      <JoinModal isOpen={modalOpen} onClose={() => setModalOpen(false)} />
     </section>
   )
 }
