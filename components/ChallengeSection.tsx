@@ -3,22 +3,22 @@ export default function ChallengeSection() {
     {
       icon: 'timer',
       title: 'Screening Burnout',
-      desc: 'Recruiters spend 60% of their time filtering unqualified resumes. We automate the vetting process.',
+      desc: 'Hiring managers face burnout when sourcing qualified, remote-ready candidates.',
     },
     {
       icon: 'visibility_off',
       title: 'Lack of Visibility',
-      desc: 'Elite African talent remains hidden from global eyes. We put you in front of decision makers.',
+      desc: 'Job seekers are overwhelmed, chasing dozens of applications with little return.',
     },
     {
       icon: 'gpp_maybe',
-      title: 'Unverified Skills',
-      desc: "Degrees aren't enough. Our readiness engine verifies real-world output and technical depth.",
+      title: 'Zero Human Tailoring',
+      desc: 'Traditional job portals lack human connection, community, and talent readiness.',
     },
     {
       icon: 'hub',
       title: 'Fragmented Ecosystem',
-      desc: 'No single home for growth and networking. Inkers Hub is the unified professional solution.',
+      desc: 'There is no Africa-focused system balancing preparation, positioning, and placement.',
     },
   ]
 
