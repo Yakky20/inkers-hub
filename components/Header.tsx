@@ -1,6 +1,11 @@
 'use client'
 
+import { useState } from 'react'
+import JoinModal from './JoinModal'
+
 export default function Header() {
+  const [modalOpen, setModalOpen] = useState(false)
+
   const toggleTheme = () => {
     const html = document.documentElement
     if (html.classList.contains('dark')) {
@@ -52,14 +57,18 @@ export default function Header() {
             <span className="material-symbols-outlined dark:hidden">dark_mode</span>
             <span className="material-symbols-outlined hidden dark:block text-white">light_mode</span>
           </button>
-          <button className="text-sm font-bold text-charcoal dark:text-slate-300 hover:text-primary transition-all">
+          {/* <button className="text-sm font-bold text-charcoal dark:text-slate-300 hover:text-primary transition-all">
             Login
-          </button>
-          <button className="bg-navy-dark dark:bg-white dark:text-navy-dark text-white px-5 py-2 rounded-full text-sm font-bold shadow-lg hover:bg-black dark:hover:bg-slate-200 transition-all">
+          </button> */}
+          <button
+            onClick={() => setModalOpen(true)}
+            className="bg-navy-dark dark:bg-white dark:text-navy-dark text-white px-5 py-2 rounded-full text-sm font-bold shadow-lg hover:bg-black dark:hover:bg-slate-200 transition-all"
+          >
             Join Now
           </button>
         </div>
       </header>
+      <JoinModal isOpen={modalOpen} onClose={() => setModalOpen(false)} />
     </div>
   )
 }
