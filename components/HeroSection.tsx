@@ -14,12 +14,12 @@ export default function HeroSection() {
   const [modalOpen, setModalOpen] = useState(false)
 
   return (
-    <section className="hero-pattern min-h-screen flex flex-col justify-center relative pt-32 pb-20 px-6 overflow-hidden">
+    <section className="hero-pattern min-h-screen flex flex-col justify-center relative pt-24 pb-14 md:pt-32 md:pb-20 px-6 overflow-hidden">
       {/* Background blobs */}
       <div className="absolute top-1/4 left-1/4 size-[600px] bg-primary/5 blur-[120px] rounded-full -z-10" />
       <div className="absolute bottom-1/4 right-1/4 size-[500px] bg-accent/5 blur-[100px] rounded-full -z-10" />
 
-      <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center w-full">
+      <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-8 lg:gap-16 items-center w-full">
         {/* ─── Left Column ─── */}
         <div className="space-y-8 z-10">
           {/* Badge */}
@@ -29,7 +29,7 @@ export default function HeroSection() {
           </div>
 
           {/* Heading */}
-          <h1 className="text-5xl lg:text-7xl font-extrabold leading-[1.1] tracking-tight text-navy-dark dark:text-white">
+          <h1 className="text-4xl sm:text-5xl lg:text-7xl font-extrabold leading-[1.1] tracking-tight text-navy-dark dark:text-white">
             From Job Hunters <br />
             <span className="text-primary text-glow-red">to the Hunted</span>
           </h1>
@@ -92,8 +92,8 @@ export default function HeroSection() {
         </div>
 
         {/* ─── Right Column — Floating Visual ─── */}
-        <div className="relative h-[700px] flex items-center justify-center lg:justify-end">
-          <div className="relative size-[550px]">
+        <div className="relative h-[320px] sm:h-[480px] lg:h-[700px] flex items-center justify-center lg:justify-end">
+          <div className="relative size-[280px] sm:size-[380px] lg:size-[550px]">
             {/* Orbit rings */}
             <div className="absolute inset-0 border-2 border-primary/15 rounded-full" />
             <div className="absolute inset-20 border-2 border-primary/10 rounded-full" />
@@ -101,9 +101,9 @@ export default function HeroSection() {
             {/* Center score */}
             <div className="absolute inset-0 flex items-center justify-center z-20">
               <div className="size-64 rounded-full bg-primary/5 blur-3xl absolute" />
-              <div className="bg-white dark:bg-[#0f0f0f] size-44 rounded-full flex items-center justify-center border border-slate-100 dark:border-white/10 shadow-2xl relative">
+              <div className="bg-white dark:bg-[#0f0f0f] size-28 sm:size-36 lg:size-44 rounded-full flex items-center justify-center border border-slate-100 dark:border-white/10 shadow-2xl relative">
                 <div className="text-center">
-                  <span className="text-5xl font-black text-navy-dark dark:text-white tracking-tighter">4.9</span>
+                  <span className="text-3xl sm:text-4xl lg:text-5xl font-black text-navy-dark dark:text-white tracking-tighter">4.9</span>
                   <p className="text-[10px] text-charcoal dark:text-slate-400 font-bold uppercase tracking-widest mt-1">
                     Avg Vetting
                   </p>
@@ -113,7 +113,7 @@ export default function HeroSection() {
 
             {/* Floating Card 1 — AI Engine */}
             <div
-              className="absolute -top-12 -left-6 z-30 glass-light p-5 rounded-3xl shadow-2xl w-64 float"
+              className="hidden lg:block absolute -top-12 -left-6 z-30 glass-light p-5 rounded-3xl shadow-2xl w-64 float"
               style={{ animationDelay: '0s' }}
             >
               <div className="flex items-start justify-between mb-4">
@@ -149,7 +149,7 @@ export default function HeroSection() {
 
             {/* Floating Card 2 — Sarah Jenkins */}
             <div
-              className="absolute top-8 -right-24 z-30 glass-light p-6 rounded-3xl shadow-2xl w-72 float"
+              className="hidden lg:block absolute top-8 -right-24 z-30 glass-light p-6 rounded-3xl shadow-2xl w-72 float"
               style={{ animationDelay: '1s' }}
             >
               <div className="flex items-center gap-4 mb-4">
@@ -188,7 +188,7 @@ export default function HeroSection() {
 
             {/* Floating Card 3 — Hub Stats */}
             <div
-              className="absolute -bottom-10 -left-10 z-30 glass-light p-6 rounded-3xl shadow-2xl w-64 float"
+              className="hidden lg:block absolute -bottom-10 -left-10 z-30 glass-light p-6 rounded-3xl shadow-2xl w-64 float"
               style={{ animationDelay: '2s' }}
             >
               <div className="flex items-center gap-3 mb-4">
@@ -215,7 +215,7 @@ export default function HeroSection() {
 
             {/* Floating pill — Kofi Mensah */}
             <div
-              className="absolute top-[45%] -left-32 z-20 bg-white dark:bg-[#0f0f0f] px-4 py-2.5 rounded-full shadow-lg border border-slate-100 dark:border-white/10 flex items-center gap-2 float"
+              className="hidden lg:flex absolute top-[45%] -left-32 z-20 bg-white dark:bg-[#0f0f0f] px-4 py-2.5 rounded-full shadow-lg border border-slate-100 dark:border-white/10 items-center gap-2 float"
               style={{ animationDelay: '0.5s' }}
             >
               <div
@@ -228,7 +228,7 @@ export default function HeroSection() {
 
             {/* Floating pill — Amina J. */}
             <div
-              className="absolute bottom-12 -right-16 z-20 bg-white dark:bg-[#0f0f0f] px-4 py-2.5 rounded-full shadow-lg border border-slate-100 dark:border-white/10 flex items-center gap-2 float"
+              className="hidden lg:flex absolute bottom-12 -right-16 z-20 bg-white dark:bg-[#0f0f0f] px-4 py-2.5 rounded-full shadow-lg border border-slate-100 dark:border-white/10 items-center gap-2 float"
               style={{ animationDelay: '1.5s' }}
             >
               <div

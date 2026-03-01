@@ -11,17 +11,17 @@ export default function CTABanner() {
   return (
     <section className="py-20 px-6 bg-white dark:bg-[#0f0f0f]">
       <div className="max-w-7xl mx-auto">
-        <div className="relative bg-primary rounded-[32px] overflow-hidden p-12 lg:p-20 flex flex-col lg:flex-row items-center justify-between gap-16">
+        <div className="relative bg-primary rounded-[32px] overflow-hidden p-8 sm:p-12 lg:p-20 flex flex-col lg:flex-row items-center justify-between gap-8 md:gap-16">
           {/* Decorative blobs */}
           <div className="absolute -top-24 -left-24 size-96 bg-white/10 blur-[100px] rounded-full" />
           <div className="absolute -bottom-24 -right-24 size-96 bg-accent/20 blur-[100px] rounded-full" />
 
           {/* Left */}
-          <div className="relative z-10 lg:w-3/5 space-y-8">
-            <h2 className="text-4xl lg:text-6xl font-extrabold text-white leading-tight">
+          <div className="relative z-10 lg:w-3/5 space-y-6 md:space-y-8">
+            <h2 className="text-3xl sm:text-4xl lg:text-6xl font-extrabold text-white leading-tight">
               Ready to expand your engineering team?
             </h2>
-            <p className="text-white/80 text-xl max-w-xl font-medium leading-relaxed">
+            <p className="text-white/80 text-lg sm:text-xl max-w-xl font-medium leading-relaxed">
               Stop sifting through hundreds of unqualified applications. Get matched with pre-vetted, top-tier African
               engineering talent in less than 48 hours.
             </p>

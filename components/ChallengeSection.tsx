@@ -23,14 +23,14 @@ export default function ChallengeSection() {
   ]
 
   return (
-    <section className="py-32 px-6 bg-surface-light dark:bg-[#141414]">
+    <section className="py-16 md:py-32 px-6 bg-surface-light dark:bg-[#141414]">
       <div className="max-w-7xl mx-auto">
-        <div className="max-w-3xl mb-20 space-y-4">
+        <div className="max-w-3xl mb-12 md:mb-20 space-y-4">
           <h2 className="text-primary font-bold tracking-widest text-sm uppercase">The Challenge</h2>
-          <h3 className="text-5xl font-bold tracking-tight text-navy-dark dark:text-white">
+          <h3 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-navy-dark dark:text-white">
             The Talent Gap We Bridge
           </h3>
-          <p className="text-charcoal dark:text-slate-300 text-xl leading-relaxed">
+          <p className="text-charcoal dark:text-slate-300 text-lg sm:text-xl leading-relaxed">
             Traditional hiring in emerging markets is broken. We provide the transparency both sides deserve.
           </p>
         </div>
@@ -39,7 +39,7 @@ export default function ChallengeSection() {
           {cards.map((card) => (
             <div
               key={card.title}
-              className="group p-10 rounded-3xl bg-white dark:bg-[#0f0f0f] border border-slate-200 dark:border-white/10 card-shadow hover:border-primary/30 transition-all duration-500"
+              className="group p-6 sm:p-8 md:p-10 rounded-3xl bg-white dark:bg-[#0f0f0f] border border-slate-200 dark:border-white/10 card-shadow hover:border-primary/30 transition-all duration-500"
             >
               <div className="size-14 bg-primary/10 text-primary flex items-center justify-center rounded-2xl mb-8 group-hover:scale-110 transition-transform">
                 <span className="material-symbols-outlined text-3xl">{card.icon}</span>

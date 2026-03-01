@@ -7,19 +7,19 @@ export default function ForTalentsRecruiters() {
   const [modalOpen, setModalOpen] = useState(false)
 
   return (
-    <section className="py-32 px-6 bg-surface-light dark:bg-[#141414] border-y border-slate-100 dark:border-white/5">
+    <section className="py-16 md:py-32 px-6 bg-surface-light dark:bg-[#141414] border-y border-slate-100 dark:border-white/5">
       <div className="max-w-7xl mx-auto">
-        <div className="grid lg:grid-cols-2 gap-16 lg:gap-32">
+        <div className="grid lg:grid-cols-2 gap-10 md:gap-16 lg:gap-32">
           {/* For Talents */}
-          <div className="space-y-12">
-            <div className="flex items-center gap-6">
-              <div className="size-16 rounded-3xl bg-primary flex items-center justify-center shadow-xl shadow-primary/20">
-                <span className="material-symbols-outlined text-white text-3xl">person</span>
+          <div className="space-y-10 md:space-y-12">
+            <div className="flex items-center gap-4 md:gap-6">
+              <div className="size-12 sm:size-14 md:size-16 rounded-3xl bg-primary flex items-center justify-center shadow-xl shadow-primary/20 shrink-0">
+                <span className="material-symbols-outlined text-white text-2xl md:text-3xl">person</span>
               </div>
-              <h2 className="text-4xl font-extrabold text-navy-dark dark:text-white tracking-tight">For Talents</h2>
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-navy-dark dark:text-white tracking-tight">For Talents</h2>
             </div>
 
-            <div className="relative pl-12 space-y-16">
+            <div className="relative pl-8 sm:pl-10 md:pl-12 space-y-10 sm:space-y-12 md:space-y-16">
               <div className="absolute left-3.5 top-2 bottom-2 w-0.5 bg-slate-200 dark:bg-white/10" />
 
               {[
@@ -37,12 +37,12 @@ export default function ForTalentsRecruiters() {
                 },
               ].map((item) => (
                 <div key={item.title} className="relative group">
-                  <div className="absolute -left-12 top-1.5 size-7 rounded-full bg-primary border-4 border-white dark:border-[#141414] shadow-sm z-10" />
+                  <div className="absolute -left-8 sm:-left-10 md:-left-12 top-1.5 size-7 rounded-full bg-primary border-4 border-white dark:border-[#141414] shadow-sm z-10" />
                   <div className="space-y-3">
-                    <h4 className="text-2xl font-bold text-navy-dark dark:text-white group-hover:text-primary transition-colors">
+                    <h4 className="text-xl sm:text-2xl font-bold text-navy-dark dark:text-white group-hover:text-primary transition-colors">
                       {item.title}
                     </h4>
-                    <p className="text-lg text-charcoal/80 dark:text-slate-300 leading-relaxed">{item.desc}</p>
+                    <p className="text-base sm:text-lg text-charcoal/80 dark:text-slate-300 leading-relaxed">{item.desc}</p>
                   </div>
                 </div>
               ))}
@@ -59,15 +59,15 @@ export default function ForTalentsRecruiters() {
           </div>
 
           {/* For Recruiters */}
-          <div className="space-y-12">
-            <div className="flex items-center gap-6">
-              <div className="size-16 rounded-3xl bg-navy-dark dark:bg-white flex items-center justify-center shadow-xl shadow-navy-dark/10">
-                <span className="material-symbols-outlined text-white dark:text-navy-dark text-3xl">corporate_fare</span>
+          <div className="space-y-10 md:space-y-12">
+            <div className="flex items-center gap-4 md:gap-6">
+              <div className="size-12 sm:size-14 md:size-16 rounded-3xl bg-navy-dark dark:bg-white flex items-center justify-center shadow-xl shadow-navy-dark/10 shrink-0">
+                <span className="material-symbols-outlined text-white dark:text-navy-dark text-2xl md:text-3xl">corporate_fare</span>
               </div>
-              <h2 className="text-4xl font-extrabold text-navy-dark dark:text-white tracking-tight">For Recruiters</h2>
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-navy-dark dark:text-white tracking-tight">For Recruiters</h2>
             </div>
 
-            <div className="relative pl-12 space-y-16">
+            <div className="relative pl-8 sm:pl-10 md:pl-12 space-y-10 sm:space-y-12 md:space-y-16">
               <div className="absolute left-3.5 top-2 bottom-2 w-0.5 bg-slate-200 dark:bg-white/10" />
 
               {[
@@ -85,10 +85,10 @@ export default function ForTalentsRecruiters() {
                 },
               ].map((item) => (
                 <div key={item.title} className="relative group">
-                  <div className="absolute -left-12 top-1.5 size-7 rounded-full bg-navy-dark/30 dark:bg-white/30 border-4 border-white dark:border-[#141414] shadow-sm z-10" />
+                  <div className="absolute -left-8 sm:-left-10 md:-left-12 top-1.5 size-7 rounded-full bg-navy-dark/30 dark:bg-white/30 border-4 border-white dark:border-[#141414] shadow-sm z-10" />
                   <div className="space-y-3">
-                    <h4 className="text-2xl font-bold text-navy-dark dark:text-white">{item.title}</h4>
-                    <p className="text-lg text-charcoal/80 dark:text-slate-300 leading-relaxed">{item.desc}</p>
+                    <h4 className="text-xl sm:text-2xl font-bold text-navy-dark dark:text-white">{item.title}</h4>
+                    <p className="text-base sm:text-lg text-charcoal/80 dark:text-slate-300 leading-relaxed">{item.desc}</p>
                   </div>
                 </div>
               ))}
