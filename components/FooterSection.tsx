@@ -3,15 +3,8 @@ export default function FooterSection() {
     <footer className="bg-white dark:bg-[#0f0f0f] text-charcoal dark:text-slate-300 py-20 px-6 border-t border-slate-200 dark:border-white/10">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start md:items-center gap-10 border-b border-slate-100 dark:border-white/10 pb-16">
         {/* Logo */}
-        <div className="flex items-center gap-4">
-          <div className="flex items-center justify-center size-10 bg-primary/10 rounded-xl">
-            <svg className="text-primary size-6" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
-              <path d="M6 6H42L36 24L42 42H6L12 24L6 6Z" fill="currentColor" />
-            </svg>
-          </div>
-          <span className="text-2xl font-bold text-navy-dark dark:text-white uppercase tracking-tighter">
-            Inkers Hub
-          </span>
+        <div className="flex items-center">
+          <img src="/logo.119cad41.png" alt="Inkers Hub" className="h-12 w-auto object-contain" />
         </div>
 
         {/* Links */}

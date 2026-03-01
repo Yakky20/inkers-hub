@@ -16,15 +16,8 @@ export default function Header() {
     <div className="fixed top-6 left-0 w-full z-50 px-6">
       <header className="max-w-7xl mx-auto glass-light dark:bg-[#0f0f0f]/90 rounded-full px-6 h-16 flex items-center justify-between shadow-lg border border-black/5 dark:border-white/10">
         {/* Logo */}
-        <div className="flex items-center gap-3">
-          <div className="flex items-center justify-center size-8 bg-primary rounded-lg shadow-lg shadow-primary/20">
-            <svg className="text-white size-5" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
-              <path d="M6 6H42L36 24L42 42H6L12 24L6 6Z" fill="currentColor" />
-            </svg>
-          </div>
-          <span className="text-lg font-extrabold tracking-tight uppercase text-navy-dark dark:text-white">
-            Inkers Hub
-          </span>
+        <div className="flex items-center">
+          <img src="/logo.119cad41.png" alt="Inkers Hub" className="h-9 w-auto object-contain" />
         </div>
 
         {/* Nav */}
