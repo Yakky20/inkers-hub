@@ -7,7 +7,7 @@ export default function WhyDifferent() {
   ]
 
   return (
-    <section className="py-32 px-6 bg-white dark:bg-navy-dark">
+    <section className="py-32 px-6 bg-white dark:bg-[#0f0f0f]">
       <div className="max-w-7xl mx-auto">
         <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
           <span className="text-primary font-bold tracking-[0.2em] text-sm uppercase">The Advantage</span>
@@ -19,7 +19,7 @@ export default function WhyDifferent() {
           </p>
         </div>
 
-        <div className="overflow-hidden rounded-3xl border border-slate-200 dark:border-white/10 bg-white dark:bg-navy-dark card-shadow">
+        <div className="overflow-hidden rounded-3xl border border-slate-200 dark:border-white/10 bg-white dark:bg-[#0f0f0f] card-shadow">
           <div className="overflow-x-auto">
             <table className="w-full text-left border-collapse">
               <thead>

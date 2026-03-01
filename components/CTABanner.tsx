@@ -1,6 +1,6 @@
 export default function CTABanner() {
   return (
-    <section className="py-20 px-6 bg-white dark:bg-navy-dark">
+    <section className="py-20 px-6 bg-white dark:bg-[#0f0f0f]">
       <div className="max-w-7xl mx-auto">
         <div className="relative bg-primary rounded-[32px] overflow-hidden p-12 lg:p-20 flex flex-col lg:flex-row items-center justify-between gap-16">
           {/* Decorative blobs */}

@@ -14,7 +14,7 @@ export default function Header() {
 
   return (
     <div className="fixed top-6 left-0 w-full z-50 px-6">
-      <header className="max-w-7xl mx-auto glass-light dark:bg-navy-dark/90 rounded-full px-6 h-16 flex items-center justify-between shadow-lg border border-black/5 dark:border-white/10">
+      <header className="max-w-7xl mx-auto glass-light dark:bg-[#0f0f0f]/90 rounded-full px-6 h-16 flex items-center justify-between shadow-lg border border-black/5 dark:border-white/10">
         {/* Logo */}
         <div className="flex items-center gap-3">
           <div className="flex items-center justify-center size-8 bg-primary rounded-lg shadow-lg shadow-primary/20">

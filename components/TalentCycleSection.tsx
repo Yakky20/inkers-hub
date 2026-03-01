@@ -1,6 +1,6 @@
 export default function TalentCycleSection() {
   return (
-    <section className="py-32 px-6 relative bg-white dark:bg-navy-dark">
+    <section className="py-32 px-6 relative bg-white dark:bg-[#0f0f0f]">
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-primary/5 to-transparent" />
 
       <div className="max-w-7xl mx-auto relative">
@@ -18,7 +18,7 @@ export default function TalentCycleSection() {
           <div className="hidden lg:block absolute top-1/2 left-0 w-full h-[2px] bg-slate-100 dark:bg-white/5 -translate-y-1/2 -z-10" />
 
           {/* Step 1 */}
-          <div className="bg-white dark:bg-navy-dark p-10 rounded-3xl w-full max-w-sm text-center border border-slate-200 dark:border-white/10 card-shadow group hover:border-primary/50 transition-all">
+          <div className="bg-white dark:bg-[#0f0f0f] p-10 rounded-3xl w-full max-w-sm text-center border border-slate-200 dark:border-white/10 card-shadow group hover:border-primary/50 transition-all">
             <div className="size-12 rounded-full bg-primary/10 text-primary flex items-center justify-center font-black mx-auto mb-6">
               1
             </div>
@@ -30,7 +30,7 @@ export default function TalentCycleSection() {
           </div>
 
           {/* Step 2 — highlighted */}
-          <div className="bg-white dark:bg-navy-dark p-10 rounded-3xl w-full max-w-sm text-center border-2 border-primary card-shadow shadow-primary/10 scale-110 z-10">
+          <div className="bg-white dark:bg-[#0f0f0f] p-10 rounded-3xl w-full max-w-sm text-center border-2 border-primary card-shadow shadow-primary/10 scale-110 z-10">
             <div className="size-12 rounded-full bg-primary text-white flex items-center justify-center font-black mx-auto mb-6">
               2
             </div>
@@ -42,7 +42,7 @@ export default function TalentCycleSection() {
           </div>
 
           {/* Step 3 */}
-          <div className="bg-white dark:bg-navy-dark p-10 rounded-3xl w-full max-w-sm text-center border border-slate-200 dark:border-white/10 card-shadow group hover:border-primary/50 transition-all">
+          <div className="bg-white dark:bg-[#0f0f0f] p-10 rounded-3xl w-full max-w-sm text-center border border-slate-200 dark:border-white/10 card-shadow group hover:border-primary/50 transition-all">
             <div className="size-12 rounded-full bg-primary/10 text-primary flex items-center justify-center font-black mx-auto mb-6">
               3
             </div>

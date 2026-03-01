@@ -1,6 +1,6 @@
 export default function ForTalentsRecruiters() {
   return (
-    <section className="py-32 px-6 bg-surface-light dark:bg-[#0a0f1a] border-y border-slate-100 dark:border-white/5">
+    <section className="py-32 px-6 bg-surface-light dark:bg-[#141414] border-y border-slate-100 dark:border-white/5">
       <div className="max-w-7xl mx-auto">
         <div className="grid lg:grid-cols-2 gap-16 lg:gap-32">
           {/* For Talents */}
@@ -30,7 +30,7 @@ export default function ForTalentsRecruiters() {
                 },
               ].map((item) => (
                 <div key={item.title} className="relative group">
-                  <div className="absolute -left-12 top-1.5 size-7 rounded-full bg-primary border-4 border-white dark:border-navy-dark shadow-sm z-10" />
+                  <div className="absolute -left-12 top-1.5 size-7 rounded-full bg-primary border-4 border-white dark:border-[#141414] shadow-sm z-10" />
                   <div className="space-y-3">
                     <h4 className="text-2xl font-bold text-navy-dark dark:text-white group-hover:text-primary transition-colors">
                       {item.title}
@@ -78,7 +78,7 @@ export default function ForTalentsRecruiters() {
                 },
               ].map((item) => (
                 <div key={item.title} className="relative group">
-                  <div className="absolute -left-12 top-1.5 size-7 rounded-full bg-navy-dark/30 dark:bg-white/30 border-4 border-white dark:border-navy-dark shadow-sm z-10" />
+                  <div className="absolute -left-12 top-1.5 size-7 rounded-full bg-navy-dark/30 dark:bg-white/30 border-4 border-white dark:border-[#141414] shadow-sm z-10" />
                   <div className="space-y-3">
                     <h4 className="text-2xl font-bold text-navy-dark dark:text-white">{item.title}</h4>
                     <p className="text-lg text-charcoal/80 dark:text-slate-300 leading-relaxed">{item.desc}</p>

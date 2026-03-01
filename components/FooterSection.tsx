@@ -1,6 +1,6 @@
 export default function FooterSection() {
   return (
-    <footer className="bg-white dark:bg-navy-dark text-charcoal dark:text-slate-300 py-20 px-6 border-t border-slate-200 dark:border-white/10">
+    <footer className="bg-white dark:bg-[#0f0f0f] text-charcoal dark:text-slate-300 py-20 px-6 border-t border-slate-200 dark:border-white/10">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start md:items-center gap-10 border-b border-slate-100 dark:border-white/10 pb-16">
         {/* Logo */}
         <div className="flex items-center gap-4">

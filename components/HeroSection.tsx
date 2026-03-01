@@ -94,7 +94,7 @@ export default function HeroSection() {
             {/* Center score */}
             <div className="absolute inset-0 flex items-center justify-center z-20">
               <div className="size-64 rounded-full bg-primary/5 blur-3xl absolute" />
-              <div className="bg-white dark:bg-navy-dark size-44 rounded-full flex items-center justify-center border border-slate-100 dark:border-white/10 shadow-2xl relative">
+              <div className="bg-white dark:bg-[#0f0f0f] size-44 rounded-full flex items-center justify-center border border-slate-100 dark:border-white/10 shadow-2xl relative">
                 <div className="text-center">
                   <span className="text-5xl font-black text-navy-dark dark:text-white tracking-tighter">4.9</span>
                   <p className="text-[10px] text-charcoal dark:text-slate-400 font-bold uppercase tracking-widest mt-1">
@@ -208,7 +208,7 @@ export default function HeroSection() {
 
             {/* Floating pill — Kofi Mensah */}
             <div
-              className="absolute top-[45%] -left-32 z-20 bg-white dark:bg-navy-dark px-4 py-2.5 rounded-full shadow-lg border border-slate-100 dark:border-white/10 flex items-center gap-2 float"
+              className="absolute top-[45%] -left-32 z-20 bg-white dark:bg-[#0f0f0f] px-4 py-2.5 rounded-full shadow-lg border border-slate-100 dark:border-white/10 flex items-center gap-2 float"
               style={{ animationDelay: '0.5s' }}
             >
               <div
@@ -221,7 +221,7 @@ export default function HeroSection() {
 
             {/* Floating pill — Amina J. */}
             <div
-              className="absolute bottom-12 -right-16 z-20 bg-white dark:bg-navy-dark px-4 py-2.5 rounded-full shadow-lg border border-slate-100 dark:border-white/10 flex items-center gap-2 float"
+              className="absolute bottom-12 -right-16 z-20 bg-white dark:bg-[#0f0f0f] px-4 py-2.5 rounded-full shadow-lg border border-slate-100 dark:border-white/10 flex items-center gap-2 float"
               style={{ animationDelay: '1.5s' }}
             >
               <div

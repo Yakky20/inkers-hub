@@ -23,7 +23,7 @@ export default function ChallengeSection() {
   ]
 
   return (
-    <section className="py-32 px-6 bg-surface-light dark:bg-[#0a0f1a]">
+    <section className="py-32 px-6 bg-surface-light dark:bg-[#141414]">
       <div className="max-w-7xl mx-auto">
         <div className="max-w-3xl mb-20 space-y-4">
           <h2 className="text-primary font-bold tracking-widest text-sm uppercase">The Challenge</h2>
@@ -39,7 +39,7 @@ export default function ChallengeSection() {
           {cards.map((card) => (
             <div
               key={card.title}
-              className="group p-10 rounded-3xl bg-white dark:bg-navy-dark border border-slate-200 dark:border-white/10 card-shadow hover:border-primary/30 transition-all duration-500"
+              className="group p-10 rounded-3xl bg-white dark:bg-[#0f0f0f] border border-slate-200 dark:border-white/10 card-shadow hover:border-primary/30 transition-all duration-500"
             >
               <div className="size-14 bg-primary/10 text-primary flex items-center justify-center rounded-2xl mb-8 group-hover:scale-110 transition-transform">
                 <span className="material-symbols-outlined text-3xl">{card.icon}</span>
